@@ -10,15 +10,18 @@ import Filter from '../../Components/Filter';
 import Button from '../../Components/Button';
 
 class Repository extends Component {
-  state = {
-    repository: {},
-    issues: [],
-    loading: true,
-    filter: 'all',
-    page: 1,
-    perPage: 5,
-    searching: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      repository: {},
+      issues: [],
+      loading: true,
+      filter: 'all',
+      page: 1,
+      perPage: 5,
+      searching: false,
+    };
+  }
 
   async componentDidMount() {
     const { filter, perPage, page } = this.state;
@@ -203,4 +206,5 @@ Repository.propTypes = {
     }),
   }).isRequired,
 };
+
 export default Repository;

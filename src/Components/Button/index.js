@@ -26,6 +26,8 @@ const Button = styled.button.attrs(props => ({
     margin-left: 5px;
     font-weight: bold;
     color: #fff;
+    pointer-events:none;
+    cursor:default;
   }
 
   &:hover{

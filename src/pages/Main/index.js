@@ -9,12 +9,15 @@ import Container from '../../Components/Container';
 import { Form, SubmitButton, List } from './styles';
 
 export default class Main extends Component {
-  state = {
-    newRepo: '',
-    repositories: [],
-    loading: false,
-    // error: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      newRepo: '',
+      repositories: [],
+      loading: false,
+      // error: false,
+    };
+  }
 
   // carregar os dados do localstorage
   componentDidMount() {
