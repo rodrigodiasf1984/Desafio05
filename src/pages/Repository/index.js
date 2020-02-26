@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { FaSpinner } from 'react-icons/fa';
-import { GoThumbsdown, GoThumbsup, GoCode } from 'react-icons/go';
+import {
+  GoThumbsdown,
+  GoThumbsup,
+  GoCode,
+  GoChevronLeft,
+  GoChevronRight,
+} from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import api from '../../services/api';
@@ -187,6 +193,7 @@ class Repository extends Component {
             type="button"
             onClick={e => this.handlePagination(e, page - 1)}
           >
+            <GoChevronLeft color="#FFF" size={20} />
             <p>Anterior</p>
           </Button>
           <span>{searching ? <FaSpinner /> : `Página ${page}`}</span>
@@ -197,6 +204,7 @@ class Repository extends Component {
             onClick={e => this.handlePagination(e, page + 1)}
           >
             <p>Próxima</p>
+            <GoChevronRight color="#FFF" size={20} />
           </Button>
         </Pagination>
       </Container>

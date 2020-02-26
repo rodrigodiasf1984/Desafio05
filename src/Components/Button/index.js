@@ -7,8 +7,8 @@ const Button = styled.button.attrs(props => ({
 }))`
   border: 1px solid #eee;
   padding: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 4px;
   width: 100px;
   height: 40px;

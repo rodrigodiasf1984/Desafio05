@@ -9,6 +9,7 @@ export default createGlobalStyle`
   }
 
   html, body, #root{
+    padding:20px;
     min-height:100%;
   }
 

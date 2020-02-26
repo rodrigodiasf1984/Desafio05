@@ -125,5 +125,6 @@ export const Pagination = styled.div`
 export const IssueLabel = styled.span.attrs(props => ({
   labelColor: props.color,
 }))`
-  color: ${({ labelColor }) => labelColor};
+  background-color: ${({ labelColor }) => labelColor} !important;
+  font-weight: bold !important;
 `;
