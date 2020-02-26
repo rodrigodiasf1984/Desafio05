@@ -4,7 +4,7 @@ import { GoThumbsdown, GoThumbsup, GoCode } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import api from '../../services/api';
-import { Loading, Owner, IssueList, Pagination } from './styles';
+import { Loading, Owner, IssueList, Pagination, IssueLabel } from './styles';
 import Container from '../../Components/Container';
 import Filter from '../../Components/Filter';
 import Button from '../../Components/Button';
@@ -167,7 +167,12 @@ class Repository extends Component {
                     {issue.title}
                   </a>
                   {issue.labels.map(label => (
-                    <span key={String(label.id)}>{label.name}</span>
+                    <IssueLabel
+                      color={`#${label.color}`}
+                      key={String(label.id)}
+                    >
+                      {label.name}
+                    </IssueLabel>
                   ))}
                 </strong>
                 <p>{issue.user.login}</p>

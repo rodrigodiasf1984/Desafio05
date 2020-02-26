@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Filter = styled.div`
   display: flex;
-  margin-left: 100px;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default Filter;

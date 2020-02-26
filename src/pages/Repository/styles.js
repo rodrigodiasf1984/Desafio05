@@ -121,3 +121,9 @@ export const Pagination = styled.div`
   align-items: center;
   padding: 5px;
 `;
+
+export const IssueLabel = styled.span.attrs(props => ({
+  labelColor: props.color,
+}))`
+  color: ${({ labelColor }) => labelColor};
+`;

@@ -10,8 +10,8 @@ const Button = styled.button.attrs(props => ({
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 4px;
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
 
   display: flex;
   align-items: center;
