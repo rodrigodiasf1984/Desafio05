@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   max-width: 700px;
+  display:flex;
+  flex-direction:column;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -18,5 +20,7 @@ const Container = styled.div`
       margin-right: 10px;
     }
   }
+
+
 `;
 export default Container;
