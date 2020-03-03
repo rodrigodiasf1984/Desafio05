@@ -12,7 +12,7 @@ Criar uma aplicação com **ReactJS** para consumir a API-REST do Github. O usu�
 
 ## :clipboard: Iniciando a aplicação
 
-1. Clone o repositório com `git clone git@github.com:GustavoBlaze/react-github-issues.git`
+1. Clone o repositório com `git clone https://github.com/rodrigodiasf1984/Desafio05.git`
 2. Entre dentro da pasta do projeto com `cd react-github-issues`
 3. Instale todas as dependencias com o comando `yarn`
 4. Digite `yarn start` para rodar o projeto
