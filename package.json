@@ -50,6 +50,6 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^1.19.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^4.7.2"
   }
 }
